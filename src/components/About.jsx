@@ -1,8 +1,11 @@
 import React from "react";
 import profile from "./images/profile.png";
+import Fade from 'react-reveal/Fade';
+
 const About = () => {
   return (
     <div className=" bg-[#363940] py-10 flex justify-center items-center  text-white">
+      <Fade bottom>
       <div className="container flex flex-col xl:flex-row justify-center items-center leading-8">
         {/* Right content */}
         <div className="p-10">
@@ -28,6 +31,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      </Fade>
     </div>
   );
 };

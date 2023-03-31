@@ -3,6 +3,9 @@ import { FaBroadcastTower } from "react-icons/fa";
 import { FaDesktop } from "react-icons/fa";
 import { SiAltiumdesigner } from "react-icons/si";
 import { BsArrowUpRightSquare } from "react-icons/bs";
+
+import Fade from "react-reveal/Fade";
+
 const Service = () => {
   return (
     <div className="px-10 md:px-20 xl:px-40 pt-14 bg-[#191C21] text-white">
@@ -21,49 +24,55 @@ const Service = () => {
       {/* Grid */}
       <div className="grid sm:grid-row md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3  gap-10 py-14 xl:py-20">
         {/* Grid 1 */}
-        <div className="flex flex-col justify-center items-center border-2 py-10 px-5 space-y-5 hover:-translate-y-5 cursor-pointer group hover:bg-[#EC4034] transition ease-in duration-100 leading-10">
-          <div className="">
-            <FaBroadcastTower style={{ fontSize: "8rem" }} />
-          </div>
-          <h1 className="uppercase text-red-500 text-2xl pb-5 font-serif group-hover:text-white">
-            Global search
-          </h1>
-          <div className="relative">
-            Note that you can adjust the border color and width to your
-            preference by modifying the border CSS property.
-            <div className="absolute left-40 bottom-2 text-xl group-hover:scale-150">
-              <BsArrowUpRightSquare />
+        <Fade bottom duration={1000}>
+          <div className="flex flex-col justify-center items-center border-2 py-10 px-5 space-y-5 hover:-translate-y-5 cursor-pointer group hover:bg-[#EC4034] transition ease-in duration-100 leading-10">
+            <div className="">
+              <FaBroadcastTower style={{ fontSize: "8rem" }} />
+            </div>
+            <h1 className="uppercase text-red-500 text-2xl pb-5 font-serif group-hover:text-white">
+              Global search
+            </h1>
+            <div className="relative">
+              Note that you can adjust the border color and width to your
+              preference by modifying the border CSS property.
+              <div className="absolute left-40 bottom-2 text-xl group-hover:scale-150">
+                <BsArrowUpRightSquare />
+              </div>
             </div>
           </div>
-        </div>
+        </Fade>
         {/* Grid 2 */}
-        <div className="flex flex-col justify-center items-center border-2 py-10 px-5 space-y-5  hover:-translate-y-5 cursor-pointer group hover:bg-[#EC4034] transition ease-in duration-100 leading-10">
-          <FaDesktop style={{ fontSize: "8rem" }} />
-          <h1 className="uppercase text-red-500 text-2xl pb-5 font-serif group-hover:text-white">
-            Quality Service
-          </h1>
-          <div className="relative">
-            Note that you can adjust the border color and width to your
-            preference by modifying the border CSS property.
-            <div className="absolute left-40 bottom-2 text-xl group-hover:scale-150">
-              <BsArrowUpRightSquare />
+        <Fade bottom duration={2000}>
+          <div className="flex flex-col justify-center items-center border-2 py-10 px-5 space-y-5  hover:-translate-y-5 cursor-pointer group hover:bg-[#EC4034] transition ease-in duration-100 leading-10">
+            <FaDesktop style={{ fontSize: "8rem" }} />
+            <h1 className="uppercase text-red-500 text-2xl pb-5 font-serif group-hover:text-white">
+              Quality Service
+            </h1>
+            <div className="relative">
+              Note that you can adjust the border color and width to your
+              preference by modifying the border CSS property.
+              <div className="absolute left-40 bottom-2 text-xl group-hover:scale-150">
+                <BsArrowUpRightSquare />
+              </div>
             </div>
           </div>
-        </div>
+        </Fade>
         {/* Grid 3 */}
-        <div className="flex flex-col justify-center items-center border-2 py-10 px-5 space-y-5  hover:-translate-y-5 cursor-pointer group hover:bg-[#EC4034] transition ease-in duration-100 leading-10">
-          <SiAltiumdesigner style={{ fontSize: "8rem" }} />
-          <h1 className="uppercase text-red-500 text-2xl pb-5 font-serif group-hover:text-white">
-            creative design
-          </h1>
-          <div className="relative">
-            Note that you can adjust the border color and width to your
-            preference by modifying the border CSS property.
-            <div className="absolute left-40 bottom-2 text-xl group-hover:scale-150">
-              <BsArrowUpRightSquare />
+        <Fade bottom duration={3000}>
+          <div className="flex flex-col justify-center items-center border-2 py-10 px-5 space-y-5  hover:-translate-y-5 cursor-pointer group hover:bg-[#EC4034] transition ease-in duration-100 leading-10">
+            <SiAltiumdesigner style={{ fontSize: "8rem" }} />
+            <h1 className="uppercase text-red-500 text-2xl pb-5 font-serif group-hover:text-white">
+              creative design
+            </h1>
+            <div className="relative">
+              Note that you can adjust the border color and width to your
+              preference by modifying the border CSS property.
+              <div className="absolute left-40 bottom-2 text-xl group-hover:scale-150">
+                <BsArrowUpRightSquare />
+              </div>
             </div>
           </div>
-        </div>
+        </Fade>
       </div>
     </div>
   );
